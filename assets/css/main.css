@@ -71,6 +71,12 @@ body {
 .blur-text {
   filter: blur(8px);
   animation: clearText 2s ease-out forwards;
+/*gradient*/
+  background: linear-gradient(90deg, #ff6a00, #007bff); /* orange → blue */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700; /* optional bold */
 }
 
 @keyframes clearText {
