@@ -72,6 +72,7 @@ body {
   filter: blur(8px);
   animation: clearText 2s ease-out forwards;
 /*gradient*/
+background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;
  
 }
 
