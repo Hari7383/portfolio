@@ -672,43 +672,13 @@ section,
   line-height: 0;
 }
 
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
-.stats i {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  width: 54px;
-  height: 54px;
-  font-size: 24px;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-}
-
-.stats .stats-item {
-  margin-top: 10px;
+.about img {
   width: 100%;
-  position: relative;
-  text-align: center;
-  z-index: 0;
-}
-
-.stats .stats-item span {
-  font-size: 36px;
-  display: block;
-  font-weight: 700;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.stats .stats-item p {
-  padding: 0;
-  margin: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
+  height: 350px;
+  /* Adjust height as you like (300–380 works best) */
+  object-fit: cover;
+  /* Crops image cleanly */
+  border-radius: 12px;
 }
 
 /*--------------------------------------------------------------
@@ -746,6 +716,40 @@ section,
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
+}
+
+/* ======================================= */
+
+.skill-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-box {
+  background: #111;
+  padding: 18px 25px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid #222;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.skill-box:hover {
+  border-color: #0d6efd;
+  box-shadow: 0 0 15px rgba(0, 110, 255, 0.4);
+  transform: translateY(-5px);
+}
+
+.skill-box i {
+  font-size: 22px;
+  color: #0d6efd;
 }
 
 /*--------------------------------------------------------------
